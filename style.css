@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Seaweed Script&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier Prime', monospace;
+}
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    line-height: 1.5;
+}
+a{
+    color: #000000;
+    text-decoration: none;
+} 
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 25px 9%;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    color: rgb(0, 0, 0);
+}
+
+.navbar .logo  {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: Seaweed Script, sans-serif; 
+    transition: color 0.5s ease;
+}
+
+.navbar .logo a:hover {
+    color: #a8a8a8;
+    
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.5s ease;
+}
+
+
+.navbar .nav-links a:hover, 
+.navbar .nav-links a.active
+{
+    color: #a8a8a8;
+}
