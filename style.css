@@ -8,8 +8,8 @@
     font-family: 'Courier Prime', monospace;
 }
 body {
-    background-color: rgb(193, 181, 181);
-    color: white;
+    background-color: white(193, 181, 181);
+    color: black;
     font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
     line-height: 1.5;
@@ -20,6 +20,7 @@ a{
 } 
 .navbar {
     position: fixed;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 10px;
     left: 0;
     top: 0;
     width: 100%;
@@ -32,6 +33,7 @@ a{
     color: rgb(0, 0, 0);
     opacity: 0.7;
     transition: opacity 0.5s ease;
+
 }
 
 .navbar .logo {
@@ -73,13 +75,13 @@ a{
     padding: 60px 2% 0;
 }
 .intro {
-    margin: 300px 0 0 0;
+    /*margin: 300px 0 0 0;*/
     width: 700px;
     /*height: 350px;*/
     align-content: space-around;
    background-color: #000000;
     color: #ffffff;
-    padding: 70px 70px 70px 50px;
+    padding: 70px 2% 70px 50px;
 }
 
 .intro .btn{
@@ -109,9 +111,105 @@ a{
     height: 350px;
     border-radius: 50%;
     margin-left: 100px;
-    margin-top: 100px;
+    /*margin-top: 100px;*/
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#home{
     display: flex;
-    justify-content: right;
-    align-items: right;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+    
+}
+.flex-container .item{
+    background-color: white;
+    height: absolute;
+    width: auto;
+    color: #000000;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 10px;
+}
+
+.about-me{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 10px;
+    padding: 60px;
+    margin: 70px 2% 70px 2%;
+    justify-items: center;
+}
+.about-me h2{
+    padding-bottom: 20px;
+}
+
+.about{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    gap: 50px;
+   
+}
+.skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    gap: 50px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 10px;
+   
+    margin: 70px 2% 70px 2%;
+    justify-items: center;
+    border-radius: 10px;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+    height: 300px
+}
+
+
+
+.skills-icon ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   gap: 100px;
+   
+    list-style: none;
+    padding: 0;
+    margin: 0;
+        
+}
+.skills-icon ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+  
+}
+.skills-icon ul li img{
+    width: 50px;
+    height: 50px;
+}
+.skills-icon ul li i{
+    font-size: 51px;
+    color: #000000;
 }
