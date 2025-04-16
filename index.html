@@ -46,7 +46,7 @@
             </section>
         </div>
 
-        <div class="about-me">
+        <div class="about-me" id="about">
             <h2> About Me </h2>
             <section class="about">
                 
@@ -64,7 +64,7 @@
         </div>
 
         <div>
-            <section class="skills">
+            <section class="skills" id="skills">
 
                 <h2> My Skills </h2>
                 <div class="skills-icon">
@@ -87,7 +87,10 @@
             </section>
         </div>
         <div>
-            <section id="projects">
+            <section id="projects" style="
+            padding-left: 0px;
+            padding-right: 0px;" >
+
                 <h2> My Projects </h2>
                 <div class="flex-container">
                     <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quas dolor quia dolorum, in quo? Nam, eaque similique laborum dolorum odio doloremque, numquam nulla dolore soluta, blanditiis aliquid inventore necessitatibus?</div>
@@ -101,41 +104,43 @@
             <section id="contact">
 
                 <h2> Contact Me </h2>
-
-                <span>
-                    <form>
+                <div class="flex-container-contact">
+                    <span class="contact-form">
+                        <form>
                     
-                        <label for="name">Name:</label> <br/> 
-                        <input type="text" id="name" name="name" placeholder="Your Name"> <br/>
+                            <label for="name">Name:</label> <br/> 
+                            <input type="text" id="name" name="name" placeholder="Your Name"> <br/>
 
                             <label for="email">Email:</label> <br/>
-                            <input type="email" id="email" name="email"><br/>
+                            <input type="email" id="email" name="email" placeholder="your.email@example.com"><br/>
 
-                                <label for="message">Your Message  </label> <br/>
-                                <textarea rows="10" cols="30">   
-                                </textarea>
+                            <label for="message">Message  </label> <br/>
+                            <textarea rows="10" cols="30" placeholder   = "Your message here..."></textarea>
 
-                   <br/><br/>
-                   <input type="button" value="Send Message">
+                            <br/><br/>
+                            <input type="button" value="Send Message">
 
-                    </form>
-                </span>
-
-                <span>
-                    <h3> Contact Information </h3>
-                <div class="socials">
-                    <a href="https://github.com/ibankole97"><i class='bx bxl-github'></i></a>
-                    <a href="https://www.linkedin.com/in/isreal-bankole-0b0b3b1b1/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
-                    <a href="tel:+2349060818996"><i class='bx bxs-phone'></i></a>
-                    <a href="https://x.com/OyefolarinB"><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href=""></a>
+                        </form>
+                    </span>
+                        
+                    <div class="contact-info">
+                        <span class="follow-label">
+                            <h3> Follow Me </h3>
+                            <div class="vl"></div>
+                                <div class="socials">
+                                    <a href="https://github.com/ibankole97"><i class='bx bxl-github bx-rotate-270' ></i></a>
+                                    <a href="https://www.linkedin.com/in/isreal-bankole-0b0b3b1b1/" target="_blank"><i class='bx bxl-linkedin bx-rotate-270' ></i></a>
+                                    <a href="tel:+2349060818996"><i class='bx bxs-phone bx-rotate-270'></i></a>
+                                    <a href="https://x.com/OyefolarinB"><i class="fa-brands fa-x-twitter bx-rotate-270  "></i></a>
+                                    <a href=""></a>
+                                </div>
+                        </span>
+                    </div>
                 </div>
-                </span>
-
             </section>
         </div>
     </main>    
-    <footer>
+    <footer class="footer">
 
 
         <p> © 2025 Isreal Bankole. 🧙‍♂️ </p>

@@ -122,32 +122,12 @@ a{
     gap: 20px;
 }
 
-.flex-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 50px;
-    padding: 20px;
-    
-}
-.flex-container .item{
-    background-color: white;
-    height: absolute;
-    width: auto;
-    color: #000000;
-    border-radius: 10px;
-    padding: 10px;
-    font-size: 16px;
-    font-weight: 500;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 10px;
-}
-
 .about-me{
     box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 10px;
     padding: 60px;
     margin: 70px 2% 70px 2%;
     justify-items: center;
+    border-radius: 10px;
 }
 .about-me h2{
     padding-bottom: 20px;
@@ -168,7 +148,7 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 60px;
     background-color: #ffffff;
     gap: 50px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 10px;
@@ -182,6 +162,10 @@ a{
     height: 300px
 }
 
+.skills-icon{
+    padding: 20px;
+}
+
 
 
 .skills-icon ul{
@@ -190,7 +174,6 @@ a{
     justify-content: center;
     align-items: center;
    gap: 100px;
-   
     list-style: none;
     padding: 0;
     margin: 0;
@@ -213,3 +196,136 @@ a{
     font-size: 51px;
     color: #000000;
 }
+
+#projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    background-color: #ffffff;
+    gap: 50px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 10px;
+    margin: 70px 2% 70px 2%;
+    justify-items: center;
+    border-radius: 10px;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+.flex-container .item{
+    background-color: rgb(255, 255, 255);
+    height: 250px;
+    width: 300px;
+    color: #000000;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 10px;
+}
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 10px;
+    margin: 70px 2% 70px 2%;
+    justify-items: center;
+    border-radius: 10px;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+}
+.flex-container-contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+    padding: 20px; 
+      
+}
+.flex-container-contact .contact-form{
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    width: 500px;
+    color: #000000;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 10px;
+     
+   
+}
+.flex-container-contact .contact-form input,
+.flex-container-contact .contact-form textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #989898;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+.flex-container-contact .contact-form input[type="button"],
+.flex-container-contact .contact-form input[type="submit"]{
+    background-color: #10100f;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    transition: background-color 0.5s ease, color 0.3s ease;
+}
+.flex-container-contact .contact-form input[type="button"]:hover,
+.flex-container-contact .contact-form input[type="submit"]:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+}
+.flex-container-contact .contact-form textarea{
+    height: 100px;
+    resize: none;
+    place-content: top;
+}
+
+.follow-label{
+    display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        transform: rotate(90deg);
+        gap: 10px;
+        
+}
+
+.vl{
+    border: .1px solid black;
+
+}
+
+.footer{
+    background-color: #000000;
+    color: #ffffff;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
